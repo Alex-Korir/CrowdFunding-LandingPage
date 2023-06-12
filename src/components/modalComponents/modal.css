@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap');
+
+.modalSection, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;   
+}
+
+.overlay {
+    background: rgba(49,49,49,0.8);
+}
+.modal-content {
+    margin-top: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 3px;
+    width: 700px;
+    /* height: 100vh; */
+    padding: 40px;
+
+    font-family: 'Commissioner', sans-serif;
+    /* height: 1000px; */
+    max-height: 150vh;
+}
+
+.modal-content .claim{
+    font-size: 14px;
+    color: var(--dark-gray);
+    margin-top: 13px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.pledging{
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgb(200, 200, 200);
+    padding: 20px;
+    border-radius: 6px;
+    outline: none;
+    font-family: 'Commissioner', sans-serif;
+
+    display: flex;
+    margin-bottom: 23px;
+}
+.pledging .optionBox{
+    width: 10%;
+    height: 100%;
+}
+.pledging p{
+    font-size: 13px;
+    color: var(--dark-gray);
+    font-weight: 500;
+}
+.topLayer{
+    margin-bottom: 10px;
+    display: flex;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+}
+.topLayer .rightside{
+    display: flex;
+}
+.topLayer .rightside > .cyan{
+    color: var(--moderate-cyan);
+    font-weight: 700;
+    margin-left: 20px;
+}
+.topLayer .leftside{
+    display: flex;
+
+}
+.topLayer .leftside > .parr{
+    font-weight: 700;
+    color: black;
+    font-size: 14px;
+    
+}
+.leftside > .leftParr{
+    font-size: 13px;
+    margin-left: 8px;
+    /* border: 1px solid green; */
+    font-weight: 400;
+}
+.pledgeCont p{
+    line-height: 20px;
+}
+.optionBox .radioButton{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #d3d0d0;
+    border-radius: 50%;
+    margin: 3px 5px;
+}
+

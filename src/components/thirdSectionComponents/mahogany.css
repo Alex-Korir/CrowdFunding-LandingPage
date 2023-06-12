@@ -1,0 +1,18 @@
+.mahoganySection{
+    padding: 25px;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 6px;
+    margin-bottom: 22px;
+}
+.mahoganySection .heading{
+    color: var(--dark-gray);
+}
+.mahoganySection .heading p{
+    color: hsl(176, 30%, 68%);
+}
+.mahoganySection .parag p{
+    color: hsl(0, 4%, 78%);
+}
+.mahoganySection .reward button{
+    background-color: hsl(0, 1%, 70%);
+}

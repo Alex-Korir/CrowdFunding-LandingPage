@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap');
+.wholeContainer{
+    width: 100%;
+    /* height: 1000vh; */
+    /* border: 1px solid green; */
+    background-color: rgb(245, 245, 245);
+}
+
+
+.upperContainer{
+    width: 100%;
+    height: 350px;
+    background: url('../images/image-hero-desktop.jpg');
+    background-position: center;
+    background-size: cover;
+
+}
+.contentContainer{
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.contentContainer ul{
+    list-style: none;
+    display: flex;
+    color: var(--white-colo);
+}
+.contentContainer ul li{
+    padding: 5px 10px;
+    font-size: 14px;
+    font-family: 'Commissioner', sans-serif;
+}

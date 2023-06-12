@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap');
+.holderContainer{
+    width: 100%;
+    background-color: var(--white-colo);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* padding: 30px; */
+    font-family: 'Commissioner', sans-serif;
+    border-radius: 10px;
+    margin-bottom: 23px;
+    padding: 50px 50px 35px 50px;
+}
+.holderContainer .minecraft{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-top: -68px;
+    /* margin-bottom: 15px; */
+}
+.holderContainer h3{
+    margin-bottom: 12px;
+    font-size: 23px;
+}
+.holderContainer p{
+    font-size: 13px;
+    color: var(--dark-gray);
+    margin-bottom: 25px;
+}
+.buttonFirstSection{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 30px; */
+    /* border: 1px solid green; */
+    /* height: 50px; */
+    
+}
+.buttonFirstSection .back{
+    padding: 3px 18px;
+    background-color: var(--dark-cyan);
+    border: none;
+    outline: none;
+    color: var(--white-colo);
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 13px;
+}
+.buttonFirstSection .bookmark{
+    border-radius: 30px;
+    /* border: 1px solid red; */
+    color: var(--dark-gray);
+    font-weight: 700;
+    font-size: 13px;
+    background-color: hsl(0, 0%, 94%);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* text-align: center; */
+    width: 130px;
+}
+.bookmark img{
+    width: 40px;
+    height: 40px;
+}
+.bookmark p{
+    margin: auto 0;
+    margin-right: 15px;
+}

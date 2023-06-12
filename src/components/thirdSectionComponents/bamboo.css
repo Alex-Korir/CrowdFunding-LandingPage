@@ -1,0 +1,53 @@
+.bambooSection{
+    padding: 25px;
+    border: 1px solid rgb(230, 230, 230);
+    /* background-color: red; */
+    border-radius: 6px;
+    margin-bottom: 22px;
+}
+.heading{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    color: var(--black);
+}
+.heading p{
+    color: var(--moderate-cyan);
+    font-size: 12px;
+    font-weight: 700;
+}
+.parag p{
+    font-size: 13px;
+    color: var(--dark-gray);
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+.reward{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* border: 1px solid green; */
+}
+.reward .numbers{
+    display: flex;
+    width: 53px;
+    /* border: 1px solid green; */
+    align-items: center;
+}
+.reward .numbers h3{
+    margin-right: 5px;
+}
+.reward .numbers p{
+    font-size: 10px;
+    color: var(--dark-gray);
+}
+.reward button{
+    background-color: var(--moderate-cyan);
+    color: white;
+    border-radius: 30px;
+    padding: 10px 18px;
+    outline: none;
+    border: none;
+    font-weight: 700;
+}

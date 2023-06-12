@@ -1,0 +1,8 @@
+.bigSection{
+    width: 700px;
+    /* height: 1000px; */
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    margin-top: -100px;
+    border-radius: 10px;
+}

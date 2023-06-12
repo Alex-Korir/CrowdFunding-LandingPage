@@ -1,0 +1,58 @@
+.SecondContent{
+    width: 100%;
+    background-color: var(--white-colo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Commissioner', sans-serif;
+    border-radius: 8px;
+    /* border: 1px solid black; */
+    margin-bottom: 23px;
+}
+.valuesPart{
+    /* border: 1px solid red; */
+    display: flex;
+    /* justify-content: space-between; */
+    width: 85%;
+    margin-top: 35px;
+    margin-bottom: 23px;
+}
+.backed{
+    width: 33.5%;
+    /* border: 2px solid green; */
+}
+.valuesPart .spacing{
+    margin-left: 25px;
+}
+/* .valuesPart hr{
+    opacity: 40%;
+} */
+.middle{
+    border-right: 1px solid var(--dark-gray);
+    border-left: 1px solid black;
+}
+.valuesPart .backed h3{
+    margin-bottom: 9px;
+    font-size: 20px;
+}
+.valuesPart .backed p{
+    font-size: 11px;
+    color: var(--dark-gray);
+    font-weight: 500;
+}
+.progressBar{
+    width: 85%;
+    height: 8px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    /* z-index: 0; */
+}
+.progressBar .innerProgressBar{
+    width: 80%;
+    height: 8px;
+    border-radius: 10px;
+    background-color: var(--moderate-cyan);
+    /* z-index: 2; */
+}

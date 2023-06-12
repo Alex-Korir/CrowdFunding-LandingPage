@@ -1,0 +1,26 @@
+.ThirdContainer{
+    width: 100%;
+    background-color: var(--white-colo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Commissioner', sans-serif;
+    border-radius: 8px;
+    padding: 50px;
+    /* border: 1px solid black; */
+}
+.ThirdContainer h4{
+    margin-bottom: 30px;
+}
+.ThirdContainer .firstP, .secondP{
+    font-size: 13px;
+    line-height: 24px;
+    color: var(--dark-gray);
+}
+.ThirdContainer .firstP{
+    margin-bottom: 25px;
+}
+.about{
+    margin-bottom: 20px;
+}
