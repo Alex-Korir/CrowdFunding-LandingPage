@@ -1,11 +1,13 @@
 import React from 'react'
 
-function Secondbox() {
+function Secondbox({handleClick, selection}) {
+  const containerClassName = selection === 'input2' ? 'covering selected' : 'covering';
   return (
     <>
+      <div className={containerClassName}>
         <div className='pledging'>
             <div className='optionBox'>
-              <input type='radio' checked className='radioButton'></input>
+              <input type='radio' className='radioButton' onClick={() => handleClick('input2')} value="input2" checked={selection==='input2'}/>
             </div>
             <div className='pledgeCont'>
               <div className='topLayer'>
@@ -24,6 +26,19 @@ function Secondbox() {
             </div>
            
           </div>
+          {selection ==='input2' && 
+          <div className='choosingSect'>
+             <div className='statement'>
+              <p>Enter your pledge</p>
+            </div>
+            <div className='amount'>
+              <input type='textbox'/>
+              <button>Continue</button>
+            </div>
+          </div>}
+
+      </div>
+        
     </>
   )
 }

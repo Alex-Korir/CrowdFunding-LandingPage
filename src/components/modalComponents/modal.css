@@ -14,7 +14,7 @@
     background: rgba(49,49,49,0.8);
 }
 .modal-content {
-    margin-top: 200px;
+    margin-top: 300px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -37,17 +37,26 @@
     font-weight: 500;
     margin-bottom: 25px;
 }
-.pledging{
+.covering{
+    margin-bottom: 23px;
     width: 100%;
-    height: 120px;
+    /* height: 150px; */
     border: 1px solid rgb(200, 200, 200);
-    padding: 20px;
     border-radius: 6px;
+}
+.selected{
+    border: 2px solid var(--moderate-cyan);
+}
+.pledging{
+    
+    /* border: 1px solid rgb(200, 200, 200); */
+    padding: 20px;
+  
     outline: none;
     font-family: 'Commissioner', sans-serif;
 
     display: flex;
-    margin-bottom: 23px;
+    /* margin-bottom: 23px; */
 }
 .pledging .optionBox{
     width: 10%;
@@ -58,6 +67,7 @@
     color: var(--dark-gray);
     font-weight: 500;
 }
+
 .topLayer{
     margin-bottom: 10px;
     display: flex;
@@ -67,10 +77,15 @@
 .topLayer .rightside{
     display: flex;
 }
+.topLayer .rightside > .fourtH{
+    color: var(--darkgray);
+}
 .topLayer .rightside > .cyan{
     color: var(--moderate-cyan);
-    font-weight: 700;
     margin-left: 20px;
+}
+.topLayer .rightside > .cyanFourth{
+    color: hsl(175, 25%, 72%);
 }
 .topLayer .leftside{
     display: flex;
@@ -78,9 +93,12 @@
 }
 .topLayer .leftside > .parr{
     font-weight: 700;
-    color: black;
     font-size: 14px;
+    color: black;
     
+}
+.topLayer .leftside > .parrFourth{
+    color: rgb(145, 139, 139);
 }
 .leftside > .leftParr{
     font-size: 13px;
@@ -88,8 +106,14 @@
     /* border: 1px solid green; */
     font-weight: 400;
 }
+.leftside > .leftParrF{
+    color: #e9e9e9;
+}
 .pledgeCont p{
-    line-height: 20px;
+    line-height: 25px;
+}
+.pledgeCont .fourthP{
+    color: #e6e0e0;
 }
 .optionBox .radioButton{
     width: 15px;
@@ -97,5 +121,48 @@
     border: 1px solid #d3d0d0;
     border-radius: 50%;
     margin: 3px 5px;
+}
+.optionBox .radioButtonn{
+    --webkit-appearance: none;
+    appearance: none;
+    border: 1px solid #e6e0e0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+
+}
+
+.choosingSect{
+    border-top: 1px solid #d3d0d0;
+    width: 100%;
+    height: 80px;
+    padding: 20px;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.statement p{
+    color: var(--dark-gray);
+    font-size: 13px;
+}
+.choosingSect .amount input{
+    border: 1px solid #d3d0d0;
+    width: 80px;
+    border-radius: 40px;
+    padding: 10px 18px;
+}
+.amount button{
+    padding: 10px 18px;
+    background-color: var(--moderate-cyan);
+    border: none;
+    outline: none;
+    color: var(--white-colo);
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 13px;
+    margin-left: 13px;
 }
 

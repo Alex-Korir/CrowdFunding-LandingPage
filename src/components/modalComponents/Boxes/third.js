@@ -1,11 +1,14 @@
 import React from 'react'
 
-function Thirdbox() {
+function Thirdbox({handleClick, selection}) {
+  const containerClassName = selection === 'input3' ? 'covering selected' : 'covering';
+
   return (
     <>
+      <div className={containerClassName}>
         <div className='pledging'>
             <div className='optionBox'>
-              <input type='radio' checked className='radioButton'></input>
+              <input type='radio' className='radioButton' value='input3' onClick={()=> handleClick('input3')} checked={selection==="input3"}/>
             </div>
             <div className='pledgeCont'>
               <div className='topLayer'>
@@ -22,8 +25,19 @@ function Thirdbox() {
                 member list. Shipping is included.
               </p>
             </div>
-           
-          </div>
+        </div>
+        {selection === 'input3' && 
+            <div className='choosingSect'>
+              <div className='statement'>
+                <p>Enter your pledge</p>
+              </div>
+              <div className='amount'>
+                <input type='textbox'/>
+                <button>Continue</button>
+              </div>
+            </div>}
+      </div>
+        
     </>
   )
 }
