@@ -7,7 +7,7 @@ import Thirdbox from './Boxes/third';
 import Fourthbox from './Boxes/fourthBox';
 
 
-const fontStyles = {fontSize: '20px', position: 'absolute', right: '40px'}
+const fontStyles = {fontSize: '20px', position: 'absolute', right: '40px', cursor: 'pointer'}
 function Modal({closeModal}) {
   const [selection, setSelection] = useState('');
   

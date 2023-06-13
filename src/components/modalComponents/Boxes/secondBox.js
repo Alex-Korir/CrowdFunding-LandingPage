@@ -32,7 +32,7 @@ function Secondbox({handleClick, selection}) {
               <p>Enter your pledge</p>
             </div>
             <div className='amount'>
-              <input type='textbox'/>
+              <input type='textbox' placeholder='$'/>
               <button>Continue</button>
             </div>
           </div>}

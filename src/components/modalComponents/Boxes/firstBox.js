@@ -21,7 +21,12 @@ function Firstbox({handleClick, selection}) {
             </p>
           </div>
         </div>
-        
+        {selection ==='input1' && 
+          <div className='choosingSect'>
+            <div className='amount'>
+              <button>Continue</button>
+            </div>
+          </div>}
       </div>
         
         

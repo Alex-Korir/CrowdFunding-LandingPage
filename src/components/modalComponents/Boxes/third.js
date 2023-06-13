@@ -13,7 +13,7 @@ function Thirdbox({handleClick, selection}) {
             <div className='pledgeCont'>
               <div className='topLayer'>
                 <div className='rightside'>
-                  <h5>Black Edition Stand</h5>
+                  <h5 className='selectHead'>Black Edition Stand</h5>
                   <h5 className='cyan'>Pledge $75 or more</h5>
                 </div>
                 <div className='leftside'>
