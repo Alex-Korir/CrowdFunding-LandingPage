@@ -1,7 +1,14 @@
-import React from 'react'
+import React, {useState} from 'react'
 
-function Secondbox({handleClick, selection}) {
+function Secondbox({handleClick, selection, requirmentMet}) {
   const containerClassName = selection === 'input2' ? 'covering selected' : 'covering';
+  const [numTwo, setNumTwo] = useState("");
+
+  function handlingChange(e){
+    const newValue = e.target.value;
+    setNumTwo(newValue);
+    console.log(newValue);
+  }
   return (
     <>
       <div className={containerClassName}>
@@ -32,8 +39,12 @@ function Secondbox({handleClick, selection}) {
               <p>Enter your pledge</p>
             </div>
             <div className='amount'>
-              <input type='textbox' placeholder='$'/>
-              <button>Continue</button>
+              <div className='inputSpan'>
+                <span className='symbol'>$</span>
+                <input type='text' name="name1" value={numTwo} onChange={handlingChange}/>
+              </div>
+              
+              <button onClick={requirmentMet}>Continue</button>
             </div>
           </div>}
 

@@ -1,13 +1,13 @@
 import React from 'react'
 import "./bamboo.css"
 
-function Bamboo() {
+function Bamboo({openModal}) {
   return (
     <>
         <section className='bambooSection'>
             <div className='heading'>
                 <h5>Bamboo Stand</h5>
-                <p>Pledge $25 or more</p>
+                <p onClick={openModal}>Pledge $25 or more</p>
             </div>
             <div className='parag'>
                 <p>

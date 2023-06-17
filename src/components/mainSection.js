@@ -14,7 +14,7 @@ function MainSection() {
             </div>
             <ul>
                 <li>About</li>
-                <li>Discover</li>
+                <li className='third'>Discover</li>
                 <li>Get Started</li>
             </ul>
             </div>

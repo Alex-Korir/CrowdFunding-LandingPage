@@ -34,3 +34,6 @@
     font-size: 14px;
     font-family: 'Commissioner', sans-serif;
 }
+.contentContainer .third{
+    cursor: pointer;
+}

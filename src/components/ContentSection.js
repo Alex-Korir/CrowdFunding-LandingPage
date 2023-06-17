@@ -28,7 +28,7 @@ function ContentSection() {
         <div className='bigSection'>
             <FirstContentSection openModal={openModal}/>
             <SecondContentSection/>
-            <ThirdContentSection/>
+            <ThirdContentSection openModal={openModal}/>
             {isModalOpen && <Modal closeModal={closeModal}/>}
         </div>
     </>

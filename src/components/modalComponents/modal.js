@@ -5,33 +5,44 @@ import Firstbox from './Boxes/firstBox';
 import Secondbox from './Boxes/secondBox';
 import Thirdbox from './Boxes/third';
 import Fourthbox from './Boxes/fourthBox';
+import Thankyou from './Boxes/thankYou';
 
 
 const fontStyles = {fontSize: '20px', position: 'absolute', right: '40px', cursor: 'pointer'}
 function Modal({closeModal}) {
   const [selection, setSelection] = useState('');
+
+  const [requirment, setRequirment] = useState(false);
   
   function handleClick(box) {
     setSelection(box);
   }
+
+  function requirmentMet(){
+    setRequirment(true);
+  }
+
+  
   
   return (
     <>
         <section className='modalSection'>
           <div className='overlay'></div>
         </section>
-        <section className='modal-content'>
+
+        {!requirment ? ( <section className='modal-content'>
           <div className='closeButt' >
             <GrFormClose style={fontStyles} onClick={closeModal}/>
           </div>
           <h2>Back this project</h2>
           <p className='claim'>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
           
-          <Firstbox handleClick={handleClick} selection={selection}/>
-          <Secondbox handleClick={handleClick} selection={selection}/>
-          <Thirdbox handleClick={handleClick} selection={selection}/>
+          <Firstbox handleClick={handleClick} selection={selection} requirmentMet={requirmentMet}/>
+          <Secondbox handleClick={handleClick} selection={selection} requirmentMet={requirmentMet}/>
+          <Thirdbox handleClick={handleClick} selection={selection} requirmentMet={requirmentMet}/>
           <Fourthbox/>
-        </section> 
+        </section> ) : ( <Thankyou/>)}
+       
           
     </>
   )

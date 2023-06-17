@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Thirdbox({handleClick, selection}) {
+function Thirdbox({handleClick, selection, requirmentMet}) {
   const containerClassName = selection === 'input3' ? 'covering selected' : 'covering';
 
   return (
@@ -32,8 +32,11 @@ function Thirdbox({handleClick, selection}) {
                 <p>Enter your pledge</p>
               </div>
               <div className='amount'>
-                <input type='textbox'/>
-                <button>Continue</button>
+                <div className='inputSpan'>
+                  <span className='symbol'>$</span>
+                  <input type='text'/>
+                </div>
+                <button onClick={requirmentMet}>Continue</button>
               </div>
             </div>}
       </div>

@@ -4,7 +4,7 @@ import Bamboo from './thirdSectionComponents/bamboo'
 import BlackEdition from './thirdSectionComponents/blackEdition'
 import Mahogony from './thirdSectionComponents/mahogony'
 
-function ThirdContentSection() {
+function ThirdContentSection({openModal}) {
   return (
     <>
         <section className="ThirdContainer">
@@ -18,7 +18,7 @@ function ThirdContentSection() {
                 to allow notepads, pens, and USB sticks to be stored under the stand.
                 </p>
             </div>
-            <Bamboo/>
+            <Bamboo openModal={openModal}/>
             <BlackEdition/>
             <Mahogony/>
         </section>

@@ -2,12 +2,11 @@ import React from 'react'
 // import { useState } from 'react'
 
 
-function Firstbox({handleClick, selection}) {
-  
-  
+function Firstbox({handleClick, selection, requirmentMet}) {
+  const containerClassName = selection === "input1" ? 'selected covering' : 'covering'
   return (
     <section>
-      <div className="covering">
+      <div className={containerClassName}>
         <div className='pledging'>
           <div className='optionBox'>
             <input className='radioButton' type='radio' onClick={()=>handleClick('input1')}  value = "input1" checked={selection==="input1"}/>
@@ -24,7 +23,7 @@ function Firstbox({handleClick, selection}) {
         {selection ==='input1' && 
           <div className='choosingSect'>
             <div className='amount'>
-              <button>Continue</button>
+              <button onClick={requirmentMet}>Continue</button>
             </div>
           </div>}
       </div>

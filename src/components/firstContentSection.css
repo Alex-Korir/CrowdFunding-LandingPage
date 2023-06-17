@@ -39,7 +39,7 @@
     
 }
 .buttonFirstSection .back{
-    padding: 3px 18px;
+    padding: 5px 20px;
     background-color: var(--dark-cyan);
     border: none;
     outline: none;
@@ -47,26 +47,32 @@
     border-radius: 40px;
     font-weight: 700;
     font-size: 13px;
+    cursor: pointer;
 }
-.buttonFirstSection .bookmark{
+.bookmark{
     border-radius: 30px;
-    /* border: 1px solid red; */
     color: var(--dark-gray);
     font-weight: 700;
-    font-size: 13px;
+    font-size: 14px;
     background-color: hsl(0, 0%, 94%);
 
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
     /* text-align: center; */
-    width: 130px;
+    /* width: 130px; */
 }
 .bookmark img{
     width: 40px;
     height: 40px;
+    margin-right: 5px;
 }
 .bookmark p{
     margin: auto 0;
     margin-right: 15px;
+    color: var(--dark-gray);
+}
+.book-marked p{
+    color: var(--dark-cyan);
+    
 }
