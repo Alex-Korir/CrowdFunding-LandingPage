@@ -14,13 +14,32 @@ function Modal({closeModal}) {
 
   const [requirment, setRequirment] = useState(false);
   
+  const [numTwo, setNumTwo] = useState("");
   function handleClick(box) {
     setSelection(box);
   }
 
   function requirmentMet(){
-    setRequirment(true);
+    if(!newValue){
+      setRequirment(true);
+      console.log("Hujafanya vizuri");
+    }
+    else if(newValue <=25 && newValue >= 75){
+      setRequirment(true);
+      console.log("Cannot be higher than 25 and must be lower than 75");
+    }
+    
   }
+  const newValue = e.target.value;
+  function handlingChange(e){
+
+    setNumTwo(newValue);
+    console.log("You are crazy");
+
+
+    
+  }
+
 
   
   
@@ -38,7 +57,7 @@ function Modal({closeModal}) {
           <p className='claim'>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
           
           <Firstbox handleClick={handleClick} selection={selection} requirmentMet={requirmentMet}/>
-          <Secondbox handleClick={handleClick} selection={selection} requirmentMet={requirmentMet}/>
+          <Secondbox handleClick={handleClick} selection={selection} requirmentMet={requirmentMet} handlingChange={handlingChange} numTwo={numTwo}/>
           <Thirdbox handleClick={handleClick} selection={selection} requirmentMet={requirmentMet}/>
           <Fourthbox/>
         </section> ) : ( <Thankyou/>)}

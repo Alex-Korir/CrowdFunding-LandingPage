@@ -1,14 +1,23 @@
-import React, {useState} from 'react'
+import React from 'react'
 
-function Secondbox({handleClick, selection, requirmentMet}) {
+function Secondbox({handleClick, handlingChange, numTwo, selection, requirmentMet}) {
   const containerClassName = selection === 'input2' ? 'covering selected' : 'covering';
-  const [numTwo, setNumTwo] = useState("");
+  
+  // const [error, setError] = useState({});
 
-  function handlingChange(e){
-    const newValue = e.target.value;
-    setNumTwo(newValue);
-    console.log(newValue);
-  }
+  
+//  const validationErrors = (name) => {
+//   const errors = {};
+//   if(!name){
+//     errors.name = "Cannot be blank";
+//     console.log("Hujafanya vizuri");
+//   }
+//   else if(name >=25 && name <= 75){
+//     errors.name = "Cannot be higher than 25 and must be lower than 75";
+//     console.log("Cannot be higher than 25 and must be lower than 75");
+//   }
+ 
+
   return (
     <>
       <div className={containerClassName}>
