@@ -1,21 +1,8 @@
 import React from 'react'
 
-function Secondbox({handleClick, handlingChange, numTwo, selection, requirmentMet}) {
+function Secondbox({handleClick, handlingChange, inputValues, selection, requirmentMet}) {
   const containerClassName = selection === 'input2' ? 'covering selected' : 'covering';
-  
-  // const [error, setError] = useState({});
 
-  
-//  const validationErrors = (name) => {
-//   const errors = {};
-//   if(!name){
-//     errors.name = "Cannot be blank";
-//     console.log("Hujafanya vizuri");
-//   }
-//   else if(name >=25 && name <= 75){
-//     errors.name = "Cannot be higher than 25 and must be lower than 75";
-//     console.log("Cannot be higher than 25 and must be lower than 75");
-//   }
  
 
   return (
@@ -50,7 +37,7 @@ function Secondbox({handleClick, handlingChange, numTwo, selection, requirmentMe
             <div className='amount'>
               <div className='inputSpan'>
                 <span className='symbol'>$</span>
-                <input type='text' name="name1" value={numTwo} onChange={handlingChange}/>
+                <input type='text' name="name1" value={inputValues.inputDos} onChange={(e) => handlingChange(e, 'inputDos')}/>
               </div>
               
               <button onClick={requirmentMet}>Continue</button>

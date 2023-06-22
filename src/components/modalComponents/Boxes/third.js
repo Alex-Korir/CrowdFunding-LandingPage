@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Thirdbox({handleClick, selection, requirmentMet}) {
+function Thirdbox({handleClick, handlingChange, inputValues, selection, requirmentMet}) {
   const containerClassName = selection === 'input3' ? 'covering selected' : 'covering';
 
   return (
@@ -8,7 +8,7 @@ function Thirdbox({handleClick, selection, requirmentMet}) {
       <div className={containerClassName}>
         <div className='pledging'>
             <div className='optionBox'>
-              <input type='radio' className='radioButton' value='input3' onClick={()=> handleClick('input3')} checked={selection==="input3"}/>
+              <input type='radio' readOnly className='radioButton' value='input3' onClick={()=> handleClick('input3')} checked={selection==="input3"}/>
             </div>
             <div className='pledgeCont'>
               <div className='topLayer'>
@@ -34,7 +34,7 @@ function Thirdbox({handleClick, selection, requirmentMet}) {
               <div className='amount'>
                 <div className='inputSpan'>
                   <span className='symbol'>$</span>
-                  <input type='text'/>
+                  <input type='text' value={inputValues.inputThres} onChange={(e) => handlingChange(e, 'inputThres')}/>
                 </div>
                 <button onClick={requirmentMet}>Continue</button>
               </div>

@@ -11,33 +11,39 @@ import Thankyou from './Boxes/thankYou';
 const fontStyles = {fontSize: '20px', position: 'absolute', right: '40px', cursor: 'pointer'}
 function Modal({closeModal}) {
   const [selection, setSelection] = useState('');
-
+  // const [errors, setErrors] = useState({});
   const [requirment, setRequirment] = useState(false);
-  
-  const [numTwo, setNumTwo] = useState("");
+  const [inputValues, setInputValues] = useState({
+    inputDos: '',
+    inputThres: ''
+  });
+
+
   function handleClick(box) {
     setSelection(box);
   }
-
+// THIS FUNCTION OPENS THE THANKYOU POP UP
   function requirmentMet(){
-    if(!newValue){
+    if(inputValues.inputDos >= 25 && inputValues.inputDos <= 75){
       setRequirment(true);
-      console.log("Hujafanya vizuri");
+      console.log("Ni God");
     }
-    else if(newValue <=25 && newValue >= 75){
+    else if(inputValues.inputThres >= 75){
       setRequirment(true);
-      console.log("Cannot be higher than 25 and must be lower than 75");
+      console.log('Onge bir mat kolo');
+    }
+    else{
+      setRequirment(true);
+      console.log('Nda ma lelei');
     }
     
   }
-  const newValue = e.target.value;
-  function handlingChange(e){
+  // THIS FUNCTION DESTRUCTURES THE VALUES ALLOWING THEM TO BE ASSIGNED A SPECIFIC CONDITION
 
-    setNumTwo(newValue);
-    console.log("You are crazy");
-
-
-    
+  function handlingChange(e, inputName){
+    setInputValues((prevValues) => ({
+      ...prevValues, [inputName]: e.target.value,
+    }));
   }
 
 
@@ -57,8 +63,8 @@ function Modal({closeModal}) {
           <p className='claim'>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
           
           <Firstbox handleClick={handleClick} selection={selection} requirmentMet={requirmentMet}/>
-          <Secondbox handleClick={handleClick} selection={selection} requirmentMet={requirmentMet} handlingChange={handlingChange} numTwo={numTwo}/>
-          <Thirdbox handleClick={handleClick} selection={selection} requirmentMet={requirmentMet}/>
+          <Secondbox handleClick={handleClick} selection={selection} requirmentMet={requirmentMet} handlingChange={handlingChange} inputValues={inputValues.inputDos}/>
+          <Thirdbox handleClick={handleClick} selection={selection} requirmentMet={requirmentMet} handlingChange={handlingChange} inputValues={inputValues.inputThres}/>
           <Fourthbox/>
         </section> ) : ( <Thankyou/>)}
        
