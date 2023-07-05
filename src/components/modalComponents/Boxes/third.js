@@ -8,7 +8,7 @@ function Thirdbox({handleClick, handlingChange, inputValues, selection, requirme
       <div className={containerClassName}>
         <div className='pledging'>
             <div className='optionBox'>
-              <input type='radio' readOnly className='radioButton' value='input3' onClick={()=> handleClick('input3')} checked={selection==="input3"}/>
+              <input type='radio' className='radioButton' value='input3' onClick={()=> handleClick('input3')} checked={selection==="input3"}/>
             </div>
             <div className='pledgeCont'>
               <div className='topLayer'>

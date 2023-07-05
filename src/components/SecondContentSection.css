@@ -56,3 +56,34 @@
     background-color: var(--moderate-cyan);
     /* z-index: 2; */
 }
+
+@media only screen and (max-width: 430px){
+    .valuesPart{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .valuesPart .backed{
+        margin-bottom: 18px;
+        /* border: 1px solid blue; */
+        text-align: center;
+    }
+    .valuesPart .spacing{
+        margin-left: 0;
+    }
+    .valuesPart hr{
+        margin-bottom: 18px;
+        width: 40px;
+    }
+    .valuesPart .backed h3{
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+    .progressBar{
+        height: 11px;
+        width: 75%;
+    }
+    .progressBar .innerProgressBar{
+        height: 11px;
+    }
+}

@@ -6,3 +6,10 @@
     margin-top: -100px;
     border-radius: 10px;
 }
+@media only screen and (max-width: 430px){
+    .bigSection{
+        width: 360px;
+        /* border: 1px solid green; */
+        /* margin-top: -80px; */
+    }
+}

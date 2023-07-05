@@ -3,6 +3,7 @@ import "./thankYou.css"
 import iconCheck from '../../../images/icon-check.svg'
 
 function Thankyou() {
+ 
 
   const handleThankBox = () => {
     window.location.reload()

@@ -24,3 +24,10 @@
 .about{
     margin-bottom: 20px;
 }
+
+
+@media only screen and (max-width: 430px){
+    .ThirdContainer{
+        padding: 33px;
+    }
+}

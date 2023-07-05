@@ -6,7 +6,7 @@ function Fourthbox() {
       <div className='covering' style={{"border": "1px solid #e9e9e9"}}>
         <div className='pledging'>
           <div className='optionBox'>
-            <input type='radio' className='radioButtonn' checked={false}/>
+            <input type='radio' className='radioButtonn radioButton' checked={false}/>
           </div>
           <div className='pledgeCont'>
             <div className='topLayer'>

@@ -2,6 +2,7 @@ import React from 'react'
 import logo from '../images/logo.svg'
 import './mainSection.css'
 import ContentSection from './ContentSection'
+import hamburger from '../images/icon-hamburger.svg'
 
 function MainSection() {
   return (
@@ -12,6 +13,7 @@ function MainSection() {
             <div>
                 <img src={logo} alt='This is the logo'/>
             </div>
+            <img src={hamburger} alt='hamburger icon'/>
             <ul>
                 <li>About</li>
                 <li className='third'>Discover</li>
