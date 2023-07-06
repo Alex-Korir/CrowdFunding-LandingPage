@@ -27,12 +27,10 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    border: 1px solid green;
 }
 .reward .numbers{
     display: flex;
     width: 53px;
-    /* border: 1px solid green; */
     align-items: center;
 }
 .reward .numbers h3{
@@ -82,6 +80,7 @@
         font-size: 13px;
     }
     .reward button{
-        padding: 12px 5px;
+        padding: 12px;
+        width: 60%;
     }
 }

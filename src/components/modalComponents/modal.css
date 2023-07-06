@@ -49,13 +49,9 @@
 }
 
 .pledging{
-    
-    /* border: 1px solid rgb(200, 200, 200); */
     padding: 20px;
-  
     outline: none;
     font-family: 'Commissioner', sans-serif;
-
     display: flex;
     /* margin-bottom: 23px; */
 }
@@ -189,3 +185,54 @@
     cursor: pointer;
 }
 
+@media only screen and (max-width: 430px){
+    .modal-content{
+        width: 360px;
+        top: 40%;
+        border-radius: 13px;
+    }
+    .modal-content .claim{
+        line-height: 27px;
+    }
+    .pledging{
+        display: block;
+        padding: 30px;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .pledging .optionBox{
+        float: left;
+        border: none;
+    }
+    .pledging .optionBox > input{
+        margin: 0;
+
+    }
+    
+    .topLayer .rightside{
+        display: inline-block;
+        /* border: 1px solid red; */
+        margin-top: -12px;
+        margin-left: 14px;
+    }
+    .topLayer .rightside > .cyan{
+        margin-left: 0;
+        margin-top: 8px;
+    }
+    .pledgeCont p{
+        /* display: block; */
+        margin-top: 20px;
+    }
+    .topLayer .leftside{
+        /* border: 1px solid orange; */
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+    }
+    .topLayer .leftside > .parr{
+        font-size: 16px;
+    }
+    .leftside > .leftParr{
+        font-size: 15px;
+    }
+}
